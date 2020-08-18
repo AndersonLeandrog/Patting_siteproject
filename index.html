@@ -17,15 +17,22 @@
 </head>
 
 <body>
-    <nav> <!--contém o menu do site e o banner inicial-->
+    <nav> 
         <div class="menu">
-            <span class="home">home</span>
-            <span class="version">versions</span>
-            <span class="download">downloads</span>
+            <!--menu para desktop-->
+            <span>home</span>
+            <span>versions</span>
+            <span>downloads</span>
+
+            <!--menu para dispositivos móveis-->
+            <div class="mobile" onclick="openMenu()" ondblclick="closeMenu()">
+                <img src="img/menu.svg"/>
+            </div>
         </div>
 
         <div class="banner">
-            <p>Lorem Ipsum is simply a fictional text from the printing and composition industry, it has been the industry's standard fictional text since the 1500s, when an unknown printer took a galley of the type and shuffled it to make a sample book of types.</p>
+            <p>Lorem Ipsum is simply a fictional text from the printing and composition industry, it has been the industry's standard fictional text since the 1500s, 
+            when an unknown printer took a galley of the type and shuffled it to make a sample book of types.</p>
         </div>
     </nav>
 
@@ -53,14 +60,17 @@
             <h2>add your post description in this small space, be brief and objective in your description.</h2>
             <p class="auth">Auth</p>
         </div>
+
+        <div class="banner">
+            <img src="img/banner.png" />
+        </div>
     </div>
 
     <div class="git"> <!--contém todo o conteúdo do git-->
         <p class="text">add a highlighted message in this part, it will be displayed to the user always highlighted in any screen size, you can add here something that is very relevant to your site, for example a notice of use of your site.<br><br>
-        <b class="show">Patting não é uma aplicação de distribuição paga.</b></p>
+        <b class="show">A new message for desktop mode 1024px screen or more.</b></p>
     </div>
 </body>
 
-<footer>
-</footer>
+<footer></footer>
 </html>
