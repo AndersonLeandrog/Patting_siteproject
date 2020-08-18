@@ -1,0 +1,144 @@
+/*importa uma fonte do google*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/*propriedades básicas da página *, body, h1 e h2*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /*fontProprierts*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+
+    /*styleProprierts*/
+    background: rgb(116, 116, 116);
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 0px 5px 5px 12px;
+    color: rgb(230, 230, 230);
+}
+
+p {
+    padding: 0px 5px 5px 12px;
+}
+
+/*corpo da página, nav*/
+body nav {
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+
+    body nav .menu {
+        width: 100%;
+        height: 60px;
+        background: rgb(63, 162, 255);
+    }
+
+        body nav .menu span {
+            /*fontProprierts*/
+            font-size: 1.2rem;
+
+            /*positionProprierts*/
+            float: left;
+            padding: 18.5px 5px 18.5px 10px;
+        }
+
+        body nav .banner {
+            /*styleProprierts*/
+            width: 100%;
+            height: 240px;
+            background-image: linear-gradient(rgb(63, 162, 255), rgb(0, 119, 255));
+
+            /*positionProprierts*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+            body nav  .banner p {
+                /*fontProprierts*/
+                font-size: 1.4rem;
+                text-align: center;
+
+                /*positionProprierts*/
+                margin: 0 auto;
+            }
+
+/*corpo da página, bloco de postagens blockPost*/
+    body .blockPost {
+        float: left;
+        width: 100%;
+        height: 645px;
+        background: transparent;
+    }
+    
+        body .blockPost .pinPost1 {
+            width: 100%;
+            height: 160px;
+            border-bottom: 1px solid #3d3d3d;
+            background: transparent;
+        }
+
+        body .blockPost .pinPost1 h1 {
+            padding: 20px 5px 10px 12px;
+            line-height: 25px;
+        }
+
+        body .blockPost .pinPost1 .auth {
+            color: rgb(140, 140, 140);
+        }
+
+    body .blockPost .pinPost2 {
+        width: 100%;
+        height: 160px;
+        border-bottom: 1px solid #3d3d3d;
+        background: transparent;
+    }
+    
+        body .blockPost .pinPost2 h1 {
+            padding: 20px 5px 10px 12px;
+            line-height: 25px;
+        }
+    
+        body .blockPost .pinPost2 .auth {
+            color: rgb(140, 140, 140);
+        }
+
+/*corpo da página, bloco github git*/
+body .git {
+    float: left;
+    width: 100%;
+    height: 130px;
+    background: rgb(110, 110, 110);
+}
+
+    body .git .text {
+        font-size: 1rem;
+        text-align: justify;
+        color: #ffffe0;
+        padding: 10px;
+    }
+
+        body .git .text .show {
+            display: none;
+        }
+
+/*pé da página, footer*/
+footer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: rgb(110, 110, 110);
+}
