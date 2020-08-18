@@ -1,4 +1,12 @@
 @media screen and (min-width: 680px) {
+    body nav .menu span {
+        display: block;
+    }
+
+    body nav .menu .mobile {
+        display: none;
+    }
+
     body .blockPost {
         height: 320px;
     }
@@ -29,9 +37,16 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    body {
+        height: 1200px;
+    }
+
     body .blockPost {
         width: 70%;
+        height: 700px;
         margin: 50px 0px 0px 5%;
+        background: transparent;
     }
 
         body .blockPost .pinPost1 {
@@ -44,6 +59,20 @@
             width: 50%;
             background-color: rgb(113, 113, 113);
         }
+
+        body .blockPost .banner {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 450px;
+            margin-top: 5px;
+            background: rgb(113, 113, 113);
+        }
+
+            body .blockPost .banner img {
+                width: 100%;
+                height: 100%;
+            }
 
     body .git {
         width: 20%;
