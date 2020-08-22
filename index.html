@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Patting, baixe agora!</title>
+    <title>Patting, o seu melhor aliado pós-formatação.</title>
 
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
@@ -17,60 +17,92 @@
 </head>
 
 <body>
-    <nav> 
-        <div class="menu">
-            <!--menu para desktop-->
+    <nav>
+        <div class="menu"> 
+            <img src="img/menu.png" id="switchImg" />
             <span>home</span>
             <span>versions</span>
-            <span>downloads</span>
-
-            <!--menu para dispositivos móveis-->
-            <div class="mobile" onclick="openMenu()" ondblclick="closeMenu()">
-                <img src="img/menu.svg"/>
-            </div>
-        </div>
-
-        <div class="banner">
-            <p>Lorem Ipsum is simply a fictional text from the printing and composition industry, it has been the industry's standard fictional text since the 1500s, 
-            when an unknown printer took a galley of the type and shuffled it to make a sample book of types.</p>
+            <span>download</span>
         </div>
     </nav>
 
-    <div class="blockPost"> <!--contém todos os posts da página inicial-->
-        <div class="pinPost1">
+    <div class="mainBanner">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+
+    <section id="posts"> <!--contém todos os posts da página inicial-->
+        <div class="above">
             <h1>your title here</h1>
-            <h2>add your post description in this small space, be brief and objective in your description.</h2>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h2>
             <p class="auth">Auth</p>
         </div>
 
-        <div class="pinPost1">
+        <div class="above">
             <h1>your title here</h1>
-            <h2>add your post description in this small space, be brief and objective in your description.</h2>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h2>
             <p class="auth">Auth</p>
         </div>
 
-        <div class="pinPost2">
+        <div class="below">
             <h1>your title here</h1>
-            <h2>add your post description in this small space, be brief and objective in your description.</h2>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h2>
             <p class="auth">Auth</p>
         </div>
 
-        <div class="pinPost2">
+        <div class="below">
             <h1>your title here</h1>
-            <h2>add your post description in this small space, be brief and objective in your description.</h2>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h2>
             <p class="auth">Auth</p>
         </div>
 
-        <div class="banner">
+        <div class="deskBanner">
             <img src="img/banner.png" />
         </div>
-    </div>
+    </section>
 
     <div class="git"> <!--contém todo o conteúdo do git-->
-        <p class="text">add a highlighted message in this part, it will be displayed to the user always highlighted in any screen size, you can add here something that is very relevant to your site, for example a notice of use of your site.<br><br>
-        <b class="show">A new message for desktop mode 1024px screen or more.</b></p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>
+        <b class="show">show a message for desktop screen's</b></p>
     </div>
+
+
+    <script> //mobile menu js
+        var menu, giveMenu, displaytag;
+
+            //open the mobile menu
+            menu = document.getElementById("switchImg");
+                menu.addEventListener("mouseover", function(){
+
+                    this.setAttribute("src", "img/close.png");
+
+                    giveMenu = document.querySelector(".menu"); 
+                    giveMenu.style.position="fixed";
+                    giveMenu.style.height="235px";
+
+                    displaytag = document.getElementsByTagName("span");
+                    displaytag[0].style.display="block";
+                    displaytag[1].style.display="block";
+                    displaytag[2].style.display="block";
+                });
+            
+            //close the mobile menu
+            menu.addEventListener("mouseout", function(){
+
+                this.setAttribute("src", "img/menu.png");
+
+                giveMenu.style.position="static";
+                giveMenu.style.height="50px";
+
+                displaytag[0].style.display="none";
+                displaytag[1].style.display="none";
+                displaytag[2].style.display="none";
+            });
+    </script>
+
 </body>
 
-<footer></footer>
+<footer>
+</footer>
 </html>
