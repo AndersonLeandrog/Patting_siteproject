@@ -1,34 +1,44 @@
-/*responsividade para telas entre 680px e 1024px de largura*/
 @media screen and (min-width: 680px) {
+    body nav .menu img {
+        display: none !important;
+    }
+
     body nav .menu span {
         display: block;
+        width: 100px;
+        height: 35px;
+        margin: 4px 0px 0px 5px;
+        background: transparent;
+
+        /*fontProprierts*/
+        padding-left: 5px;
     }
 
-    body nav .menu .mobile {
-        display: none;
+    body nav .menu span:hover {
+        color: darkgrey;
     }
 
-    body .blockPost {
+    body #posts {
         height: 320px;
     }
     
-        body .blockPost .pinPost1 {
-            float: left;
-            width: 50%;
-            border: none;
-            margin: 0% 0% 0.5% 0%;
-            background: rgb(110, 110, 110);
-        }
+    body #posts .above {
+        float: left;
+        width: 50%;
+        border: none;
+        margin: 0% 0% 0.5% 0%;
+        background: rgb(110, 110, 110);
+    }
 
-        body .blockPost .pinPost2 {
-            float: left;
-            width: 50%;
-            border: none;
-            background: rgb(113, 113, 113);
+    body #posts .below {
+        float: left;
+        width: 50%;
+        border: none;
+        background: rgb(113, 113, 113);
 
-            /*mostra o conteúdo git*/
-            display: block;
-        }
+        /*mostra o conteúdo git*/
+        display: block;
+    }
 
     body .git {
         width: 100%;
@@ -37,44 +47,43 @@
     }
 }
 
-/*responsividade para telas entre 1024px ou mais de largura */
 @media screen and (min-width: 1024px) {
 
     body {
-        height: 1200px;
+        height: 1350px;
     }
 
-        body .blockPost {
-            width: 70%;
-            height: 700px;
-            margin: 50px 0px 0px 5%;
-            background: transparent;
+    body #posts {
+        width: 70%;
+        height: 700px;
+        margin: 50px 0px 0px 5%;
+        background: transparent;
+    }
+
+        body #posts .above {
+            width: 50%;
+            margin-bottom: 5px;
+            background: rgb(110, 110, 110);
         }
 
-            body .blockPost .pinPost1 {
-                width: 50%;
-                margin-bottom: 5px;
-                background: rgb(110, 110, 110);
-            }
+        body #posts .below {
+            width: 50%;
+            background-color: rgb(113, 113, 113);
+        }
 
-            body .blockPost .pinPost2 {
-                width: 50%;
-                background-color: rgb(113, 113, 113);
-            }
+        body #posts .deskBanner {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 450px;
+            margin-top: 5px;
+            background: rgb(113, 113, 113);
+        }
 
-            body .blockPost .banner {
-                float: left;
+            body #posts .deskBanner img {
                 width: 100%;
-                height: 450px;
-                display: block;
-                margin-top: 5px;
-                background: rgb(113, 113, 113);
+                height: 100%;
             }
-
-                body .blockPost .banner img {
-                    width: 100%;
-                    height: 100%;
-                }
 
     body .git {
         width: 20%;
@@ -82,7 +91,21 @@
         margin: 50px 0px 0px 10px;
     }
 
-        body .git .text .show {
-            display: block;
+    body .git .text .show {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    body .mainBanner p {
+        padding: 200px;
+    }
+
+    body #posts {
+        height: 900px;
+    }
+
+        body #posts .deskBanner {
+            height: 570px;
         }
 }
