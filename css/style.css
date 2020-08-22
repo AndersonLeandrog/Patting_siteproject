@@ -1,7 +1,7 @@
-/*importa uma fonte do google*/
+/*googlefont*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
-/*propriedades básicas da página *, body, h1 e h2*/
+/*basics proprierts*/
 * {
     margin: 0px;
     padding: 0px;
@@ -31,125 +31,101 @@ p {
     padding: 0px 5px 5px 12px;
 }
 
-/*corpo da página, nav*/
-body nav {
+/*body , nav*/
+body nav, .menu {
     width: 100%;
-    height: 300px;
-    background: red;
+    height: 50px;
+    background: rgb(77, 77, 77);
 }
 
-    body nav .menu {
-        width: 100%;
-        height: 60px;
-        background: rgb(63, 162, 255);
+    body nav .menu img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        filter: invert(1);
+        background-color: transparent;
     }
 
-        body nav .menu span {
-            /*fontProprierts*/
-            font-size: 1.2rem;
+    body nav .menu span {
+        cursor: pointer;
+        display: none;
+        float: left;
+        width: 90%;
+        height: 40px;
+        margin: 2px 0px 0px 4%;
+        background: rgb(140, 140, 140);
 
-            /*positionProprierts*/
-            display: none;
-            float: left;
-            padding: 18.5px 5px 18.5px 10px;
-        }
+        /*fontProprierts*/
+        font-size: 1.4rem;
+        padding: 7px 0px 0px 2%;
+    }
 
-        body nav .menu span:hover {
-            cursor: pointer;
-            color: rgb(100, 100, 100);
-        }
+body .mainBanner {
+    /*styleProprierts*/
+    width: 100%;
+    height: 240px;
+    background-image: linear-gradient(rgb(63, 162, 255), rgb(0, 119, 255));
 
-        body nav .menu .mobile {
-            position: absolute;
-            width: 58px;
-            height: 58px;
-            background: rgb(100, 100, 100);
-        }
-
-            body nav .menu .mobile img {
-                width: 48px;
-                height: 48px;
-                padding: 5px;
-                filter: invert(1);
-            }
-            
-            /*animação do menu mobile*/
-            @keyframes openAnim {
-                from{width: 58px; height: 58px;}
-                to{width: 300px; height: 350px;}
-            }
-
-            @keyframes closeAnim {
-                from{width: 300px; height: 350px;}
-                to{width: 58px; height: 58px;}
-            }
-
-        body nav .banner {
-            /*styleProprierts*/
-            width: 100%;
-            height: 240px;
-            background-image: linear-gradient(rgb(63, 162, 255), rgb(0, 119, 255));
-
-            /*positionProprierts*/
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /*positionProprierts*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
         
-            body nav  .banner p {
-                /*fontProprierts*/
-                font-size: 1.4rem;
-                text-align: center;
+    body .mainBanner p {
+        /*fontProprierts*/
+        font-size: 1.4rem;
+        text-align: center;
 
-                /*positionProprierts*/
-                margin: 0 auto;
-            }
+        /*positionProprierts*/
+        margin: 0 auto;
+    }
 
-/*corpo da página, bloco de postagens blockPost*/
-    body .blockPost {
+/*body, posts*/
+    body #posts {
         float: left;
         width: 100%;
         height: 645px;
         background: transparent;
     }
     
-        body .blockPost .pinPost1 {
+        body #posts .above {
             width: 100%;
             height: 160px;
             border-bottom: 1px solid #3d3d3d;
             background: transparent;
         }
 
-            body .blockPost .pinPost1 h1 {
-                padding: 20px 5px 10px 12px;
-                line-height: 25px;
-            }
-
-            body .blockPost .pinPost1 .auth {
-                color: rgb(140, 140, 140);
-            }
-
-        body .blockPost .pinPost2 {
-            width: 100%;
-            height: 160px;
-            border-bottom: 1px solid #3d3d3d;
-            background: transparent;
-        }
-    
-            body .blockPost .pinPost2 h1 {
-                padding: 20px 5px 10px 12px;
-                line-height: 25px;
-            }
-    
-            body .blockPost .pinPost2 .auth {
-                color: rgb(140, 140, 140);
-            }
-    
-        body .blockPost .banner {
-            display: none;
+        body #posts .above h1 {
+            padding: 20px 5px 10px 12px;
+            line-height: 25px;
         }
 
-/*corpo da página, bloco github git*/
+        body #posts .above .auth {
+            color: rgb(140, 140, 140);
+        }
+
+    body #posts .below {
+        width: 100%;
+        height: 160px;
+        border-bottom: 1px solid #3d3d3d;
+        background: transparent;
+    }
+    
+        body #posts .below h1 {
+            padding: 20px 5px 10px 12px;
+            line-height: 25px;
+        }
+    
+        body #posts .below .auth {
+            color: rgb(140, 140, 140);
+        }
+    
+    body #posts .deskBanner {
+        display: none;
+    }
+
+/*body, git*/
 body .git {
     float: left;
     width: 100%;
@@ -168,12 +144,7 @@ body .git {
             display: none;
         }
 
-/*pé da página, footer*/
+/*body, footer*/
 footer {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    background-color: rgb(110, 110, 110);
+    /*edit*/    
 }
